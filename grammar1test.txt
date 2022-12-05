@@ -1,0 +1,8 @@
+I attempted to remove the LL parsing but there was nothing wrong with this. 
+
+S ::= <expr>
+<expr> ::= <term><expr2>
+<expr2 ::=  +<term> <expr2> | -<term> <expr2> 
+<term> ::= <factor> <term2>
+<term2> ::= *<factor><term2> | /<factor><term2>
+<factor> ::= (<expr>) |<digit>
